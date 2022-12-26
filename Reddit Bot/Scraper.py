@@ -16,8 +16,8 @@ def main():
     get_images()
 
 def get_images():
-    data = input("What images are you looking to download?: ")
-    num_images = int(input("How many images do you want to download?: "))
+    data = "Memes"
+    num_images = 1
     print('searching...')
     
     search_url = google_image + 'q=' + data
