@@ -16,7 +16,8 @@ def main():
     get_images()
 
 def get_images():
-    data = "Memes"
+    #Might change
+    data = " Reddit Memes"
     num_images = 1
     print('searching...')
     
