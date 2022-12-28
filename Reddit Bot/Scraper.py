@@ -1,6 +1,9 @@
 import os
 import requests
 from bs4 import BeautifulSoup
+import schedule
+import time
+from Mailing import mails
 
 google_image = "https://www.google.com/search?site=&tbm=isch&source=hp&biw=1873&bih=990&"
 
@@ -14,6 +17,7 @@ def main():
     if not os.path.exists(file_folder):
         os.mkdir(file_folder)
     get_images()
+    mails()
 
 def get_images():
     #Might change
@@ -54,7 +58,13 @@ def get_images():
         with open(image_name, 'wb') as fh:
             fh.write(response.content)
 
-
 # Fifth Section: Run your code
 if __name__ == "__main__":
     main()
+
+#Automates the entire proccess
+schedule.every().wednesday.at("14:54").do(lambda: main())
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
