@@ -17,8 +17,8 @@ def main():
 
 def get_images():
     #Might change
-    data = " Reddit Memes"
-    num_images = 1
+    data = "Reddit Memes"
+    num_images = 5
     print('searching...')
     
     search_url = google_image + 'q=' + data
