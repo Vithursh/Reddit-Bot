@@ -7,7 +7,7 @@ import ssl
 
 def mails():
     from_email = "Vithuchayan@gmail.com"
-    to_email = ["Vithursh0512@gmail.com", "agenchayan@gmail.com"]
+    to_email = ["Vithursh0512@gmail.com"]
     paswd = "sylcxcgjmlrvgmvc"
     
     subject = "Reddit Bot"
