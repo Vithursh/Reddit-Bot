@@ -17,7 +17,7 @@ def mails():
     e_m['To'] = to_email
     e_m['Subject'] = subject
 
-    attachment = (r'/home/vithursh/Reddit-Bot/images/image.jpg')
+    attachment = (r'/home/vithursh/Downloads/Reddit-Bot/images/image.jpg')
 
     # Open the file in binary mode
     with open(attachment, 'rb') as f:
